@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigerian Slang Interpreter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Nigerian Slangs Interpreter</h1>
+      <p class="text-lg mb-8">
+        Input your text to get the meaning of any slang
+      </p>
+      <form id="slangForm" class="w-full max-w-md mx-auto">
+        <input
+          id="slangInput"
+          class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent mb-4"
+          type="text"
+          name="search"
+          placeholder="Enter slang term"
+        />
+        <button
+          type="submit"
+          class="w-full px-4 py-2 bg-green-500 text-white font-semibold rounded-md shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="result" class="mt-8"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
